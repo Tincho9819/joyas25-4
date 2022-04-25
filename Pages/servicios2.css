@@ -1,10 +1,12 @@
 .documentoentero {
-    background-color:lightgrey;
+    background-color:lightsteelblue;
 }
 html {
     font-size: 16px;
 }
-
+.btn-group {
+    left: 20%;
+}
 .sectorlogo {
     display: flex;  
     flex-direction: row; 
@@ -335,6 +337,17 @@ hr {
     bottom: 2%;
     right: 2%;
 }
+.fotologowpp {
+    animation-name: nombre;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes nombre {
+    0% {width: 5%;}
+    50% {width: 7%;}
+    100% {width: 5%;}
+}
 
 @media screen and (max-width: 992px) {
     .cuerpo-md-12 {
@@ -442,6 +455,20 @@ hr {
         position: fixed;
         bottom: 2%;
         right: 2%;
+    }
+    .fotologowpp {
+        animation-name: nombre;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+    }
+    
+    @keyframes nombre {
+        0% {width: 9%;}
+        50% {width: 12%;}
+        100% {width: 9%;}
+    }
+    .btn-group {
+        left: 10%;
     }
 }
 
@@ -590,6 +617,17 @@ hr {
         bottom: 2%;
         right: 2%;
     }
+    .fotologowpp {
+        animation-name: nombre;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+    }
+    
+    @keyframes nombre {
+        0% {width: 15%;}
+        50% {width: 19%;}
+        100% {width: 15%;}
+    }
     .aceroquirurgico {
         flex-direction: column;
         align-content: center;
@@ -613,4 +651,18 @@ hr {
         flex-direction: column;
         align-content: center;
     }
+    .btn-group {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .pulseralogo {
+        visibility: hidden;
+    }
+    .pblogo {
+        width: 60%;
+        height: auto;
+    }
 }
+
