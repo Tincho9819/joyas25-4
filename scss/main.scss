@@ -1,5 +1,20 @@
-$color-titulo: red;
+// Generic
+@use "generic/normalize";
+@use "generic/box-sizing";
 
-h1 {
-    color: $color-titulo;
-}
+// Elements
+@use "elements/body";
+@use "elements/headings";
+@use "elements/img";
+@use "elements/links";
+
+// Objects
+@use "objects/container";
+@use "objects/ui-list";
+
+// Atoms
+@use "atoms/box";
+@use "atoms/btn";
+@use "atoms/cover-background";
+@use "atoms/pill";
+@use "atoms/typography";
