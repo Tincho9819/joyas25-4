@@ -1,0 +1,32 @@
+@use "../variables/variables";
+
+// home
+.imagenpropaganda {
+    width: 100%;
+}
+.sectioncollar {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.fotocategoriacollar {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+// producto
+.anillosheader {
+    width: 95%;
+    height: auto;
+    padding: 5% 9% 9% 5%;
+
+}
+
+.fotoquirurgico {
+    width: 250px;
+    margin-left: 15px;
+    height: 200px;
+    margin: 0 auto;
+}

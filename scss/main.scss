@@ -1,20 +1,132 @@
-// Generic
-@use "generic/normalize";
-@use "generic/box-sizing";
+// generico
+@use "generico/normalize";
+@use "generico/media";
 
-// Elements
-@use "elements/body";
-@use "elements/headings";
-@use "elements/img";
-@use "elements/links";
+// header
+@use "header/fotos";
+@use "header/texto";
+@use "header/media";
 
-// Objects
-@use "objects/container";
-@use "objects/ui-list";
+// banner
+@use "banner/foto";
+@use "banner/texto";
+@use "banner/media";
 
-// Atoms
-@use "atoms/box";
-@use "atoms/btn";
-@use "atoms/cover-background";
-@use "atoms/pill";
-@use "atoms/typography";
+// cuerpo
+@use "cuerpo/foto";
+@use "cuerpo/texto";
+@use "cuerpo/media";
+
+// footer
+@use "footer/foto";
+@use "footer/texto";
+@use "footer/media";
+
+
+.grid {
+    display: grid;
+}
+
+.cuerpo12 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.cuerpo11 {
+    grid-template-columns: repeat(1.09, 1fr);
+}
+
+.cuerpo10 {
+    grid-template-columns: repeat(1.2, 1fr);
+}
+
+.cuerpo9 {
+    grid-template-columns: repeat(1.33, 1fr);
+}
+
+.cuerpo8 {
+    grid-template-columns: repeat(1.5, 1fr);
+}
+
+.cuerpo7 {
+    grid-template-columns: repeat(1.71, 1fr);
+}
+
+.cuerpo6 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cuerpo5 {
+    grid-template-columns: repeat(2.4, 1fr);
+}
+
+.cuerpo4 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cuerpo3 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cuerpo2 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cuerpo1 {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@media screen and (max-width: 992px) {
+    @for $i from 1 through 12 {
+        .cuerpo-md-#{$i} {
+            grid-template-columns: repeat($i*(1/12), 1fr);
+        }
+    }
+   
+    .cat-md-12 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .cat-md-11 {
+        grid-template-columns: repeat(1.09, 1fr);
+    }
+    
+    .cat-md-10 {
+        grid-template-columns: repeat(1.2, 1fr);
+    }
+    
+    .cat-md-9 {
+        grid-template-columns: repeat(1.33, 1fr);
+    }
+    
+    .cat-md-8 {
+        grid-template-columns: repeat(1.5, 1fr);
+    }
+    
+    .cat-md-7 {
+        grid-template-columns: repeat(1.71, 1fr);
+    }
+    
+    .cat-md-6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ato-md-5 {
+        grid-template-columns: repeat(2.4, 1fr);
+    }
+    
+    .cat-md-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .cat-md-3 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .cat-md-2 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .cat-md-1 {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}

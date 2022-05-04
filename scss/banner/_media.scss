@@ -1,0 +1,30 @@
+// tablet
+.nombrepb {
+    font-size: $fs-mobile-nombrepb;
+}
+.btn-group {
+    margin: 0 auto;
+}
+
+
+
+// mobile
+
+@media screen and (max-width: 572px) {
+    .pulseralogo {
+        visibility: hidden;
+    }
+    .pblogo {
+        width: 60%;
+        height: auto;
+    }
+    .nombrepb {
+        font-size: $fs-texto-info;
+    }
+    .btn-group {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 20%;
+    }
+}

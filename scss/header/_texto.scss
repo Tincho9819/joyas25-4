@@ -1,0 +1,36 @@
+@use "../variables/variables";
+
+
+$mayus: uppercase;
+
+.headerpb {
+    text-transform: $mayus;
+}
+.sectorlogo {
+    display: flex;  
+    flex-direction: row; 
+    justify-content: center;
+}
+.nombrepb {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5fr, 1fr));
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-style: solid;
+    text-transform: $mayus;
+    padding:2% 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+// menu
+
+.btn-group {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.dropdown-toggle {
+    font-size: $fs-descripcion-seccion;
+}

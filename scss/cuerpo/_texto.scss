@@ -1,0 +1,71 @@
+@use "../variables/variables";
+
+// home
+.lapropaganda {
+    padding: 2%;
+}
+.cuerpocolumna {
+    width: 100%;
+}
+.propaganda {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    height: auto;
+}
+.textopropaganda {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    transform: translate(-70%, -30%);
+    text-align: left;
+    font-size: $fs-propaganda;
+}
+.textocollar {
+    border: 10px solid white;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    size: $fs-homecat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: $fs-section;
+}
+
+// producto
+.textoanillos {
+    text-align: center;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $fs-descripcion-seccion;
+    padding: 10px 30px;
+    color: $_negro;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+.aceroquirurgico {
+    width: 88%;
+    margin: 0 auto;
+}
+.anillosquirurgico {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+}
+.textoquirurgico {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $fs-texto-info;
+    padding: 10px 30px;
+    color: $_negro;
+}
+.consultaquirurgico {
+    display: flex;  
+    flex-direction: row; 
+    justify-content: center;
+    padding-left: 5%;
+    text-decoration: none;
+    color: $_negro;
+    font-weight: bold;
+}

@@ -1,3 +1,23 @@
+$max-width: 71.25rem;
+
+// Spacing
+$spacing-s: 1rem;
+$spacing: 1.6rem;
+$spacing-l: 3.25rem;
+
+
+// colores
+$_azulsito: lightsteelblue;
+$_blanco: white;
+$_negro: black;
+$_celestin: aliceblue;
+
+$background-document: $_azulsito;
+$background-text: $_blanco;
+$hover-color: $_celestin;
+$words-color: $_negro;
+
+// tipografia
 $font-family: "Open Sans", sans-serif;
 
 $fs-base: 16;
@@ -7,9 +27,8 @@ $_fs-15: 15 / $fs-base + rem;
 $_fs-16: 16 / $fs-base + rem;
 $_fs-20: 20 / $fs-base + rem;
 $_fs-25: 25 / $fs-base + rem;
+$_fs-28: 28 / $fs-base + rem;
 $_fs-32: 32 / $fs-base + rem;
-
-
 
 $fs-propaganda: $_fs-32;
 $fs-category: $_fs-16;
@@ -21,3 +40,18 @@ $fs-mobile-nombrepb: $_fs-32;
 $fs-descripcion-seccion: $_fs-20;
 $fs-texto-info: $_fs-16;
 $fs-tablet-nombrepb: $_fs-32;
+$fs-homecat:$_fs-28;
+
+//index
+$_z1: 1;
+$_z2: 2;
+$_z3: 3;
+$_z4: 4;
+$_z5: 5;
+$_z6: 6;
+$_z7: 7;
+$_z8: 8;
+$_z9: 9;
+$_z10: 10;
+
+$z-menu: $_z9;

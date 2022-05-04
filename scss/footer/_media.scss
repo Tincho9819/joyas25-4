@@ -1,0 +1,42 @@
+// tablet
+@media screen and (max-width: 992px) {
+.fotologowpp {
+    width: 9%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+.fotologowpp {
+    animation-name: nombre;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes nombre {
+    0% {width: 9%;}
+    50% {width: 12%;}
+    100% {width: 9%;}
+}
+}
+
+// mobile
+
+@media screen and (max-width: 572px) {
+    .fotologowpp {
+        width: 9%;
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+    }
+    .fotologowpp {
+        animation-name: nombre;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+    }
+    
+    @keyframes nombre {
+        0% {width: 9%;}
+        50% {width: 12%;}
+        100% {width: 9%;}
+    }
+}

@@ -1,0 +1,18 @@
+@use "../variables/variables";
+
+.piedepagina{
+    text-align: center;
+}
+.tituloformulario {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: $fs-propaganda;
+}
+.nombre12 {
+    transition: width 1s;
+}
+.nombre12:hover {
+    width: 300px;
+    background-color: aliceblue;
+}
+

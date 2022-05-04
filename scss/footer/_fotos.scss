@@ -1,0 +1,19 @@
+@use "../variables/variables";
+
+.fotologowpp {
+    width: 5%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+.fotologowpp {
+    animation-name: nombre;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes nombre {
+    0% {width: 5%;}
+    50% {width: 7%;}
+    100% {width: 5%;}
+}
