@@ -1,102 +1,319 @@
-@use "generico/normalize";
-@use "generico/media";
-@use "header/fotos";
-@use "header/texto";
-@use "header/media";
-@use "banner/foto";
-@use "banner/texto";
-@use "banner/media";
-@use "cuerpo/foto";
-@use "cuerpo/texto";
-@use "cuerpo/media";
-@use "footer/foto";
-@use "footer/texto";
-@use "footer/media";
-.grid {
-  display: grid; }
+/*comentar en secciones el use de las variables e importarlo aca como primero*/
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; }
 
-.cuerpo12 {
-  grid-template-columns: repeat(1, 1fr); }
+body {
+  margin: 0; }
 
-.cuerpo11 {
-  grid-template-columns: repeat(1.09, 1fr); }
+main {
+  display: block; }
 
-.cuerpo10 {
-  grid-template-columns: repeat(1.2, 1fr); }
+h1 {
+  font-size: 2em;
+  margin: 0.67em; }
 
-.cuerpo9 {
-  grid-template-columns: repeat(1.33, 1fr); }
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
 
-.cuerpo8 {
-  grid-template-columns: repeat(1.5, 1fr); }
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em; }
 
-.cuerpo7 {
-  grid-template-columns: repeat(1.71, 1fr); }
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
 
-.cuerpo6 {
-  grid-template-columns: repeat(2, 1fr); }
+a {
+  background-color: transparent; }
 
-.cuerpo5 {
-  grid-template-columns: repeat(2.4, 1fr); }
+b,
+strong {
+  font-weight: bolder; }
 
-.cuerpo4 {
-  grid-template-columns: repeat(3, 1fr); }
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
 
-.cuerpo3 {
-  grid-template-columns: repeat(4, 1fr); }
+small {
+  font-size: 80%; }
 
-.cuerpo2 {
-  grid-template-columns: repeat(6, 1fr); }
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
 
-.cuerpo1 {
-  grid-template-columns: repeat(12, 1fr); }
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+img {
+  border-style: none; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button,
+input {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+.sectorlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.pulseralogo {
+  width: 40%; }
+
+.headerpb {
+  text-transform: uppercase; }
+
+.sectorlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.nombrepb {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5fr, 1fr));
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-style: solid;
+  text-transform: uppercase;
+  padding: 2% 10%;
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.btn-group {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto; }
+
+/*
+.dropdown-toggle {
+    font-size: $fs-descripcion-seccion;
+}
+*/
+.nombrepb {
+  font-size: 2rem; }
+
+.btn-group {
+  margin: 0 auto; }
+
+@media screen and (max-width: 572px) {
+  .pulseralogo {
+    visibility: hidden; }
+  .pblogo {
+    width: 60%;
+    height: auto; }
+  .nombrepb {
+    font-size: 1rem; }
+  .btn-group {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20%; } }
+
+@use "../variables/variables";
+.imagenpropaganda {
+  width: 100%; }
+
+.sectioncollar {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+.fotocategoriacollar {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.anillosheader {
+  width: 95%;
+  height: auto;
+  padding: 5% 9% 9% 5%; }
+
+.fotoquirurgico {
+  width: 250px;
+  margin-left: 15px;
+  height: 200px;
+  margin: 0 auto; }
+
+@use "../variables/variables";
+.lapropaganda {
+  padding: 2%; }
+
+.cuerpocolumna {
+  width: 100%; }
+
+.propaganda {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  height: auto; }
+
+.textopropaganda {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  transform: translate(-70%, -30%);
+  text-align: left;
+  font-size: 2rem; }
+
+.textocollar {
+  border: 10px solid white;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  size: 1.15rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.28rem; }
+
+.textoanillos {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding: 10px 30px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.aceroquirurgico {
+  width: 88%;
+  margin: 0 auto; }
+
+.anillosquirurgico {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: center; }
+
+.textoquirurgico {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 10px 30px;
+  color: black; }
+
+.consultaquirurgico {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 5%;
+  text-decoration: none;
+  color: black;
+  font-weight: bold; }
 
 @media screen and (max-width: 992px) {
-  .cuerpo-md-1 {
-    grid-template-columns: repeat(0.08333, 1fr); }
-  .cuerpo-md-2 {
-    grid-template-columns: repeat(0.16667, 1fr); }
-  .cuerpo-md-3 {
-    grid-template-columns: repeat(0.25, 1fr); }
-  .cuerpo-md-4 {
-    grid-template-columns: repeat(0.33333, 1fr); }
-  .cuerpo-md-5 {
-    grid-template-columns: repeat(0.41667, 1fr); }
-  .cuerpo-md-6 {
-    grid-template-columns: repeat(0.5, 1fr); }
-  .cuerpo-md-7 {
-    grid-template-columns: repeat(0.58333, 1fr); }
-  .cuerpo-md-8 {
-    grid-template-columns: repeat(0.66667, 1fr); }
-  .cuerpo-md-9 {
-    grid-template-columns: repeat(0.75, 1fr); }
-  .cuerpo-md-10 {
-    grid-template-columns: repeat(0.83333, 1fr); }
-  .cuerpo-md-11 {
-    grid-template-columns: repeat(0.91667, 1fr); }
-  .cuerpo-md-12 {
-    grid-template-columns: repeat(1, 1fr); }
-  .cat-md-12 {
-    grid-template-columns: repeat(1, 1fr); }
-  .cat-md-11 {
-    grid-template-columns: repeat(1.09, 1fr); }
-  .cat-md-10 {
-    grid-template-columns: repeat(1.2, 1fr); }
-  .cat-md-9 {
-    grid-template-columns: repeat(1.33, 1fr); }
-  .cat-md-8 {
-    grid-template-columns: repeat(1.5, 1fr); }
-  .cat-md-7 {
-    grid-template-columns: repeat(1.71, 1fr); }
-  .cat-md-6 {
-    grid-template-columns: repeat(2, 1fr); }
-  .ato-md-5 {
-    grid-template-columns: repeat(2.4, 1fr); }
-  .cat-md-4 {
-    grid-template-columns: repeat(3, 1fr); }
-  .cat-md-3 {
-    grid-template-columns: repeat(4, 1fr); }
-  .cat-md-2 {
-    grid-template-columns: repeat(6, 1fr); }
-  .cat-md-1 {
-    grid-template-columns: repeat(12, 1fr); } }
+  .textopropaganda {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 572px) {
+  .textopropaganda {
+    font-size: 1rem; } }
+
+.aceroquirurgico {
+  flex-direction: column;
+  align-content: center; }
+
+@use "../variables/variables";
+.fotologowpp {
+  width: 5%;
+  position: fixed;
+  bottom: 2%;
+  right: 2%; }
+
+.fotologowpp {
+  animation-name: nombre;
+  animation-iteration-count: infinite;
+  animation-duration: 4s; }
+
+@keyframes nombre {
+  0% {
+    width: 5%; }
+  50% {
+    width: 7%; }
+  100% {
+    width: 5%; } }
+
+@use "../variables/variables";
+.piedepagina {
+  text-align: center; }
+
+.tituloformulario {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 2rem; }
+
+.nombre12 {
+  transition: width 1s; }
+
+.nombre12:hover {
+  width: 300px;
+  background-color: aliceblue; }
+
+@media screen and (max-width: 992px) {
+  .fotologowpp {
+    width: 9%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%; }
+  .fotologowpp {
+    animation-name: nombre;
+    animation-iteration-count: infinite;
+    animation-duration: 4s; }
+  @keyframes nombre {
+    0% {
+      width: 9%; }
+    50% {
+      width: 12%; }
+    100% {
+      width: 9%; } } }
+
+@media screen and (max-width: 572px) {
+  .fotologowpp {
+    width: 9%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%; }
+  .fotologowpp {
+    animation-name: nombre;
+    animation-iteration-count: infinite;
+    animation-duration: 4s; }
+  @keyframes nombre {
+    0% {
+      width: 9%; }
+    50% {
+      width: 12%; }
+    100% {
+      width: 9%; } } }

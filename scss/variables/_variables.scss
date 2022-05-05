@@ -22,25 +22,18 @@ $font-family: "Open Sans", sans-serif;
 
 $fs-base: 16;
 
-$_fs-9: 9 / $fs-base + rem;
-$_fs-15: 15 / $fs-base + rem;
-$_fs-16: 16 / $fs-base + rem;
-$_fs-20: 20 / $fs-base + rem;
-$_fs-25: 25 / $fs-base + rem;
-$_fs-28: 28 / $fs-base + rem;
-$_fs-32: 32 / $fs-base + rem;
 
-$fs-propaganda: $_fs-32;
-$fs-category: $_fs-16;
-$fs-section: $_fs-25;
-$fs-telefonowpp: $_fs-15;
-$fs-nombrepb: $_fs-32;
-$fs-mobil-textopropaganda: $_fs-32;
-$fs-mobile-nombrepb: $_fs-32;
-$fs-descripcion-seccion: $_fs-20;
-$fs-texto-info: $_fs-16;
-$fs-tablet-nombrepb: $_fs-32;
-$fs-homecat:$_fs-28;
+$fs-propaganda: 2rem;
+$fs-category: 1rem;
+$fs-section: 1.28rem;
+$fs-telefonowpp: 0.95rem;
+$fs-nombrepb: 2rem;
+$fs-mobil-textopropaganda: 2rem;
+$fs-mobile-nombrepb: 2rem;
+$fs-descripcion-seccion: 1.6rem;
+$fs-texto-info: 1rem;
+$fs-tablet-nombrepb: 2rem;
+$fs-homecat:1.15rem;
 
 //index
 $_z1: 1;
