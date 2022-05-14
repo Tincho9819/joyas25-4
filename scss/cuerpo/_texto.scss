@@ -1,10 +1,7 @@
 @use "../variables/variables";
 
 // home
-.grid {
-    display: grid;
-    justify-content: space-evenly;
-}
+
 .lapropaganda {
     padding: 2%;
 }
@@ -12,7 +9,7 @@
     width: 100%;
 }
 .todocategoria {
-    display: grid;
+    padding: 2%;
 }
 .propaganda {
     position: relative;
@@ -29,7 +26,7 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: $fs-propaganda;
-    color: $_propa;
+    color: $brilla;
     font-weight: bold;
     text-shadow: black;
 }
