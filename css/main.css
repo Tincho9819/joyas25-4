@@ -252,6 +252,12 @@ button,
   color: black;
   font-weight: bold; }
 
+.cuadroderecha {
+  display: grid; }
+
+.cuadroizquierda {
+  display: grid; }
+
 @media screen and (max-width: 992px) {
   .textopropaganda {
     font-size: 1rem; } }
